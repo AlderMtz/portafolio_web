@@ -14,6 +14,7 @@ function toogleEngine() {
     const hamburger = document.querySelector("#hamburger-nav")
     const experience = document.querySelector("#experience")
     const projects = document.querySelector("#projects")
+    const projects1 = document.querySelector("#projects1")
     const contact = document.querySelector("#contact")
     const footer = document.querySelector("#footer")
  
@@ -25,6 +26,7 @@ function toogleEngine() {
     hamburger.classList.toggle("dark-mode");
     experience.classList.toggle("dark-mode");
     projects.classList.toggle("dark-mode");
+    projects1.classList.toggle("dark-mode");
     contact.classList.toggle("dark-mode");
     footer.classList.toggle("dark-mode");
     
