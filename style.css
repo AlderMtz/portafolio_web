@@ -336,6 +336,11 @@ section {
   margin-bottom: 2rem;
 }
 
+#experience .icon-MySQL {
+  height: 2.5rem;
+}
+
+
 .experience-details-container {
   display: flex;
   justify-content: center;
@@ -655,13 +660,22 @@ body.dark-mode {
 }
 #profile.dark-mode .btn-color-2 {
   background-color: black;
-
   color: white;
   transition: all 0.6s;
 }
 #profile.dark-mode .btn-color-2:hover {
   background-color: rgb(53, 53, 53);
   transition: all 0.6s;
+  border-color: #c4ffff;
+  box-shadow: 0 0 5px #3b8eed, 0 0 5px #3b8eed, 0 0 8px #3b8eed;
+ 
+ 
+}
+#profile.dark-mode .btn-color-1:hover {
+  border-color: #ffff94;
+  box-shadow: 0 0 5px #ffff94, 0 0 5px #f9db5c, 0 0 8px #f9db5c;
+  transition: all 0.6s;
+ 
 }
 
 #profile.dark-mode #social-container .world a {
@@ -669,8 +683,8 @@ body.dark-mode {
   text-decoration: none;
   border-radius: 50%;
   box-sizing: border-box;
-  color: rgb(14 103 195);
-  text-shadow: 0px 0px 8px rgb(14 103 195);
+  color: #c4ffff;
+  text-shadow: 0 0 5px #3b8eed, 0 0 5px #3b8eed, 0 0 8px #3b8eed;
 }
 
 #profile.dark-mode #social-container .world a:hover {
@@ -685,7 +699,8 @@ body.dark-mode {
   transition: all 0.6s;
 }
 #about.dark-mode .about-pic{
-  box-shadow: 0 0 5px #3b8eed, 0 0 15px #3b8eed, 0 0 25px #3b8eed;
+  background-color: #c4ffff;
+  box-shadow: 0 0 5px #3b8eed, 0 0 15px #3b8eed, 0 0 20px #3b8eed;
 }
 #about.dark-mode .details-container {
   background-color: rgb(53, 53, 53);
@@ -716,10 +731,13 @@ body.dark-mode {
   transition: all 0.6s;
 }
 #experience.dark-mode .details-container {
-  background-color: rgb(53, 53, 53);
+ /*  background-color: rgb(53, 53, 53); */
+  background-color: #000;
   color: white;
   box-shadow: 0 0 5px #ffff94, 0 0 7px #f9db5c, 0 0 8px #f9db5c;
 }
+
+
 #experience.dark-mode .experience-sub-title {
   color: white;
 }
@@ -739,6 +757,14 @@ body.dark-mode {
   text-shadow: 0 0 5px #ffff94, 0 0 7px #f9db5c, 0 0 8px #f9db5c;
   transition: all 0.6s;
 }
+#experience.dark-mode .icon-MySQL {
+  filter: brightness(0) invert(1);
+}
+
+#experience.dark-mode .dj-icon {
+  filter: brightness(0) invert(1);
+}
+
 
 
 #projects.dark-mode .title {
@@ -855,6 +881,18 @@ body.dark-mode {
   font-size: 0.9rem;
 }
 #projects .capa h3{
+  color: white;
+  font-size: 1rem;
+ 
+}
+
+
+#projects1 .capa p{
+  color: white;
+  margin-top: -2rem;
+  font-size: 0.9rem;
+}
+#projects1 .capa h3{
   color: white;
   font-size: 1rem;
  

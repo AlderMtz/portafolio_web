@@ -62,7 +62,7 @@
     }
   }
 
-  #projects .capa{
+  #projects .capa {
     border-radius: 15px;
     position: absolute;
     height: auto;
@@ -70,19 +70,37 @@
     min-width: 245px;
     max-width: 250px;
     min-height: 235px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.959);
     transition: all 0.5s ease-out;
     opacity: 0;
-    padding:0.5rem;
+    padding: 0.5rem;
     text-align: justify;
     visibility: hidden;
-    
   }
 
-  #projects .article-container:hover > .capa{
+  #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-  
+  }
+  #projects1 .capa {
+    border-radius: 15px;
+    position: absolute;
+    height: auto;
+    width: 100;
+    min-width: 245px;
+    max-width: 250px;
+    min-height: 235px;
+    background-color: rgba(0, 0, 0, 0.959);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    padding: 0.5rem;
+    text-align: justify;
+    visibility: hidden;
+  }
+
+  #projects1 .article-container:hover > .capa {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -151,20 +169,18 @@
     margin-bottom: -1rem;
     justify-content: center;
     align-items: center;
-  
   }
 
   #profile.dark-mode .section__pic-container img {
-    box-shadow: 0 0 5px #3b8eed, 0 0 15px #3b8eed, 0 0 25px #3b8eed;
+    background-color: #c4ffff;
+    box-shadow: 0 0 5px #3b8eed, 0 0 15px #3b8eed, 0 0 20px #3b8eed;
   }
 
   .section__pic-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
-
 
   .about-containers {
     margin-top: 0;
@@ -190,25 +206,41 @@
     display: none;
   }
 
-
-  #projects .capa{
+  #projects .capa {
     border-radius: 15px;
     position: absolute;
     height: auto;
     width: auto;
     max-width: 300px;
     min-height: 300px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.959);
     transition: all 0.5s ease-out;
     opacity: 0;
-    padding:0.5rem;
+    padding: 0.5rem;
     visibility: hidden;
   }
 
-  #projects .article-container:hover > .capa{
+  #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-  
+  }
+  #projects1 .capa {
+    border-radius: 15px;
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.959);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    padding: 0.5rem;
+    visibility: hidden;
+  }
+
+  #projects1 .article-container:hover > .capa {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -221,7 +253,6 @@
   footer {
     height: 40vh;
   }
-
 
   #profile {
     height: 88vh;
@@ -298,24 +329,39 @@
     display: none;
   }
 
-
-  #projects .capa{
+  #projects .capa {
     border-radius: 15px;
     position: absolute;
     height: auto;
     width: auto;
     max-width: 315px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.959);
     transition: all 0.5s ease-out;
     opacity: 0;
-    padding:0.5rem;
+    padding: 0.5rem;
     visibility: hidden;
   }
-  
-  #projects .article-container:hover > .capa{
+
+  #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-  
   }
 
+  #projects1 .capa {
+    border-radius: 15px;
+    position: absolute;
+    height: auto;
+    width: auto;
+    max-width: 315px;
+    background-color: rgba(0, 0, 0, 0.959);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    padding: 0.5rem;
+    visibility: hidden;
+  }
+
+  #projects1 .article-container:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+  }
 }
