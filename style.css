@@ -843,3 +843,19 @@ body.dark-mode {
     0 0 150px #5c79f9c4;
   text-decoration-color: #137fc7;
 }
+
+
+/* Details cards section */
+
+
+
+#projects .capa p{
+  color: white;
+  margin-top: -2rem;
+  font-size: 0.9rem;
+}
+#projects .capa h3{
+  color: white;
+  font-size: 1rem;
+ 
+}
