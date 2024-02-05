@@ -45,7 +45,7 @@
     z-index: -1;
     content: "";
     position: absolute;
-    width: 600px;
+    width: 800px;
     height: 500px;
     /*  background: linear-gradient(#137fc7, #f9ea1a); */
     /*   background: linear-gradient(white, black); */
@@ -81,6 +81,7 @@
   #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
+    cursor:pointer;
   }
   #projects1 .capa {
     border-radius: 15px;
@@ -101,6 +102,7 @@
   #projects1 .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
+    cursor:pointer;
   }
 }
 
@@ -223,6 +225,7 @@
   #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
+    cursor:pointer;
   }
   #projects1 .capa {
     border-radius: 15px;
@@ -241,6 +244,7 @@
   #projects1 .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
+    cursor:pointer;
   }
 }
 
@@ -345,6 +349,7 @@
   #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
+    cursor:pointer;
   }
 
   #projects1 .capa {
@@ -363,5 +368,6 @@
   #projects1 .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
+    cursor:pointer;
   }
 }

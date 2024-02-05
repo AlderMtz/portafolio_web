@@ -1,16 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My protafolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaquires.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Alder Martinez</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My protafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaquires.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Alder Martinez</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Alder Martinez</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toogleMenu()">
+        <span class="ban3"></span>
+        <span class="ban3"></span>
+        <span class="ban3"></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toogleMenu()">Acerca de</a></li>
+        <li><a href="#experience" onclick="toogleMenu()">Experiencia</a></li>
+        <li><a href="#projects" onclick="toogleMenu()">Proyectos</a></li>
+        <li><a href="#contact" onclick="toogleMenu()">Contacto</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container box1">
+      <img src="./assets/profile-pic.png" alt="Alder Martinez profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hola, yo soy</p>
+      <h1 class="title">Alder Martinez</h1>
+      <p class="section__text__p2">Backend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/ALDER_CV.pdf')">
+          Descargar CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Información de contacto
+        </button>
+      </div>
+      <div id="social-container">
+        <div class="world">
+          <a href="https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/" target="_blank"
+            alt="Mi perfil de LinkedIn">
+            <i class="fab fa-linkedin-in iconin"></i>
+          </a>
+          <a href="https://github.com/AlderMtz" target="_blank" alt="Mi perfil de github">
+            <i class="fa-brands fa-github iconin"></i>
+          </a>
+        </div>
+        <!--  -->
+        <div class="wrapper">
+          <div class="outer-black">
+            <div class="outer-iron">
+              <div class="inner-black">
+                <div class="inner-black-2">
+                  <div class="inner-black-3">
+                    <button class="engine" onclick="toogleEngine()">
+                      <div class="light"></div>
+                      <span>Engine<br /></span>
+                      <span>Start<br />Stop<br /></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Conozca más</p>
+    <h1 class="title">Hacerca de mi</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img class="about-pic" src="./assets/about-pic.png" alt="Profile pricture" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <i class="fa-solid fa-medal iconin"></i>
+            <h3 class="ban1">Experiencia</h3>
+            <p class="ban2">
+              Junior<br />
+              Backend Development
+            </p>
+          </div>
+          <div class="details-container">
+            <i class="fa-solid fa-user-graduate iconin"></i>
+            <h3 class="ban1">Educación</h3>
+            <p class="ban2">
+              Dev. Backend-Platzi <br />
+              Ing. Mecatronico-UTM
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p class="about-text">
+            Soy un apasionado desarrollador backend en Python, especializado en el uso del framework Django. Mi
+            experiencia se respalda con proyectos desarrollados durante diplomados y cursos que he completado,
+            destacando mis habilidades en desarrollo web, creación de APIs y manipulación de bases de datos. <br>
+            Fuera del mundo del desarrollo, disfruto mantenerme activo y saludable yendo al gimnasio. También me encanta
+            explorar nuevos lugares, lo que alimenta mi curiosidad y creatividad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <i class="fa-solid fa-angles-down icon arrow" onclick="location.href='/#experience'"></i>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1 ex">Explora mi</p>
+    <h1 class="title">Experiencia</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa-solid fa-circle-check iconin"></i>
+              <div>
+                <h3>Django RESTFRAMEWORK</h3>
+                <p>Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check iconin"></i>
+              <div>
+                <h3>Django</h3>
+                <p>Intermedio</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check iconin"></i>
+              <div>
+                <h3>Pyhton</h3>
+                <p>Experimentado</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check iconin"></i>
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermedio</p>
+              </div>
+            </article>
+
+            <article>
+              <i class="fa-solid fa-circle-check iconin"></i>
+              <div>
+                <h3>GIT</h3>
+                <p>Experimentado</p>
+              </div>
+            </article>
+            <article>
+              <i class="fa-solid fa-circle-check iconin"></i>
+              <div>
+                <h3>VSCODE</h3>
+                <p>Experimentado</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container container2">
+          <h2 class="experience-sub-title">SKILLS</h2>
+          <div class="article-container">
+            <article>
+              <i class="fa-brands fa-python iconin"></i>
+
+              <div>
+                <h3>Pyhton</h3>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-linux iconin"></i>
+              <div>
+                <h3>Linux</h3>
+              </div>
+            </article>
+            <article>
+              <img class="icon dj-icon" src="./assets/dj-icon.png" alt="Experience icon" />
+              <div>
+                <h3>Django</h3>
+              </div>
+            </article>
+            <article>
+              <img class="icon-MySQL" src="./assets/mysql-icon.png" alt="Experience icon" />
+              <div>
+                <h3>MySQL</h3>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-github iconin"></i>
+              <div>
+                <h3>Github</h3>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-docker iconin"></i>
+              <div>
+                <h3>Docker</h3>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-html5 iconin"></i>
+              <div>
+                <h3>HTML-5</h3>
+              </div>
+            </article>
+            <article>
+              <i class="fa-brands fa-css3-alt iconin"></i>
+              <div>
+                <h3>CSS-3</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i class="fa-solid fa-angles-down icon arrow" onclick="location.href='/#projects'"></i>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Navega por mis</p>
+    <h1 class="title">Proyectos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers about-two">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/platzigram.png" alt="Project 1" />
+            <div class="article-container capa">
+              <h3>Platzigram</h3>
+              <p>La aplicación ofrece funciones clave, como un sistema de registro de usuarios, un
+                feed dinámico para explorar y crear publicaciones, una ventana detallada para gestionar perfiles y
+                una aplicación de mensajería directa para una comunicación instantánea. Además, destaca por su
+                sistema de notificaciones que informa a los usuarios sobre interacciones como comentarios, likes,
+                follows y mensajes nuevos, mejorando la interactividad y la experiencia general.</p>
+
+            </div>
+          </div>
+          <h2 class="experience-sub-title project-title">Proyecto uno</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/PlatzigramV1', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/PlatzigramV1', '_blank')">
+              Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/taskapp.png" alt="Project 2" />
+            <div class="article-container capa">
+              <h3>Task app</h3>
+              <p>Aplicación enfocada en la administración de tareas. La plataforma
+                incluye áreas dedicadas para visualizar las tareas actuales y área de detalles de tarea,
+                permitiendo el registro, modificación o eliminación de tareas de manera sencilla. La comunicación fluida
+                entre el frontend y el backend se logra mediante operaciones CRUD, garantizando una interacción eficaz y
+                una
+                gestión completa de las tareas.</p>
+
+            </div>
+          </div>
+          <h2 class="experience-sub-title project-title">Proyecto dos</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/Api_REACT', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/PlatzigramV1', '_blank')">
+
+              Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/pass.png" alt="Project 3" />
+            <div class="article-container capa">
+              <h3>Password generator</h3>
+              <p>Aplicación especializada en la generación de contraseñas, equipada con funcionalidades
+                que permiten personalizar la longitud de las contraseñas mediante una lista desplegable,
+                permitiendo adaptar la seguridad según sus necesidades. Además, la aplicación incluye la implementación
+                de caracteres especiales, mayúsculas y números, garantizando la creación de contraseñas robustas y
+                seguras.</p>
+
+            </div>
+          </div>
+          <h2 class="experience-sub-title project-title">Proyecto tres</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/Password_Generator', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/Password_Generator', '_blank')">
+              Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i class="fa-solid fa-angles-down icon arrow" onclick="location.href='/#projects1'"></i>
+  </section>
+  <section id="projects1">
+    <p class="section__text__p1">Navega por mis</p>
+    <h1 class="title">Proyectos</h1>
+    <div class="experience-details-container">
+      <div class="about-containers about-two">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/API.png" alt="Project 4" />
+            <div class="article-container capa">
+              <h3>API de Gestión de Proyectos</h3>
+              <p>
+                Desarrollo de una API con Django Rest Framework para gestionar información de
+                proyectos, incluyendo campos como título, descripción, tecnología implementada, etc.
+
+              </p>
+            </div>
+          </div>
+          <h2 class="experience-sub-title project-title">Project cuatro</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/Api_DRF', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/Password_Generator', '_blank')">
+
+              Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/clone-google.png" alt="Project 5" />
+            <div class="article-container capa">
+              <h3>Clon de google</h3>
+              <p>Proyecto de recreación de la interfaz de inicio de Google con objetivo práctico de
+                consolidar mis conocimientos en HTML y CSS. Esta iniciativa me permitió aplicar de manera práctica los
+                conceptos aprendidos, fortaleciendo mis habilidades en el diseño y estructuración de páginas web.</p>
+
+            </div>
+          </div>
+          <h2 class="experience-sub-title project-title">Proyecto cinco</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AlderMtz/clone_google', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://aldermtz.github.io/clone_google/', '_blank')">
+              Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./assets/c-pendulo.png" alt="Project 6" />
+            <div class="article-container capa">
+              <h3>Carro-péndulo invertido</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                modi hic corporis eligendi, sunt amet! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Dolor modi hic corporis
+                eligendi, sunt amet! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolor modi
+              </p>
+            </div>
+          </div>
+          <h2 class="experience-sub-title project-title">Proyecto seis</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/posts/exon-villalobos_control-de-p%C3%A9ndulo-invertido-de-dos-ruedas-activity-7106360856455565313-Iff4?utm_source=share&utm_medium=member_desktop', '_blank')">
+              Linkedin
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.youtube.com/watch?v=NGgrXbrhXpc', '_blank')">
+              YouTube
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i class="fa-solid fa-angles-down icon arrow" onclick="location.href='/#contact'"></i>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Ponte en contacto</p>
+    <h1 class="title">Contáctame</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img class="icon contact-icon email-icon" src="./assets/email.png" alt="Email icon" />
+        <p>
+          <a href="mailto:alder.mtz.ant@gmail.com">alder.mtz.ant@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img class="icon contact-icon" src="./assets/linkedin.png" alt="linkedin icon" />
+        <p>
+          <a href="mailto:https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/">Linkedin</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <i class="fa-solid fa-mobile mobile"></i>
+        <p class="number">951-126-54-31</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav id="footer">
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">Acerca de</a></li>
           <li><a href="#experience">Experiencia</a></li>
@@ -19,533 +437,13 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Alder Martinez</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toogleMenu()">
-          <span class="ban3"></span>
-          <span class="ban3"></span>
-          <span class="ban3"></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toogleMenu()">Acerca de</a></li>
-          <li><a href="#experience" onclick="toogleMenu()">Experiencia</a></li>
-          <li><a href="#projects" onclick="toogleMenu()">Proyectos</a></li>
-          <li><a href="#contact" onclick="toogleMenu()">Contacto</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container box1">
-        <img
-          src="./assets/profile-pic.png"
-          alt="Alder Martinez profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hola, yo soy</p>
-        <h1 class="title">Alder Martinez</h1>
-        <p class="section__text__p2">Backend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Descargar CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Información de contacto
-          </button>
-        </div>
-        <div id="social-container">
-          <div class="world">
-            <a
-              href="https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/"
-              target="_blank"
-              alt="Mi perfil de LinkedIn"
-            >
-              <i class="fab fa-linkedin-in iconin"></i>
-            </a>
-            <a
-              href="https://github.com/AlderMtz"
-              target="_blank"
-              alt="Mi perfil de github"
-            >
-              <i class="fa-brands fa-github iconin"></i>
-            </a>
-          </div>
-          <!--  -->
-          <div class="wrapper">
-            <div class="outer-black">
-              <div class="outer-iron">
-                <div class="inner-black">
-                  <div class="inner-black-2">
-                    <div class="inner-black-3">
-                      <button class="engine" onclick="toogleEngine()">
-                        <div class="light"></div>
-                        <span>Engine<br /></span>
-                        <span>Start<br />Stop<br /></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--  -->
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Conozca más</p>
-      <h1 class="title">Hacerca de mi</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            class="about-pic"
-            src="./assets/about-pic.png"
-            alt="Profile pricture"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <i class="fa-solid fa-medal iconin"></i>
-              <h3 class="ban1">Experiencia</h3>
-              <p class="ban2">
-                Junior<br />
-                Backend Development
-              </p>
-            </div>
-            <div class="details-container">
-              <i class="fa-solid fa-user-graduate iconin"></i>
-              <h3 class="ban1">Educación</h3>
-              <p class="ban2">
-                Ing. Mecatronico-UTM <br />
-                Dev. Backend-Platzi
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              laborum quasi ducimus est nostrum, deleniti atque nobis earum, ab
-              esse illo asperiores. Maxime sit, et repellendus perferendis
-              adipisci sequi rem perspiciatis consequatur, deleniti ducimus aut
-              explicabo eum consectetur corrupti iure saepe omnis, veritatis non
-              earum reprehenderit ipsam. Obcaecati, architecto vitae?
-            </p>
-          </div>
-        </div>
-      </div>
-      <i
-        class="fa-solid fa-angles-down icon arrow"
-        onclick="location.href='/#experience'"
-      ></i>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1 ex">Explora mi</p>
-      <h1 class="title">Experiencia</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-solid fa-circle-check iconin"></i>
-                <div>
-                  <h3>Django RESTFRAMEWORK</h3>
-                  <p>Intermedio</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check iconin"></i>
-                <div>
-                  <h3>Django</h3>
-                  <p>Intermedio</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check iconin"></i>
-                <div>
-                  <h3>Pyhton</h3>
-                  <p>Experimentado</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check iconin"></i>
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Intermedio</p>
-                </div>
-              </article>
+    <p>Copyright &#169; 2024 Alder Martinez. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <!-- Font Awesome CSS -->
+  <script src="https://kit.fontawesome.com/d2b20da030.js" crossorigin="anonymous"></script>
 
-              <article>
-                <i class="fa-solid fa-circle-check iconin"></i>
-                <div>
-                  <h3>GIT</h3>
-                  <p>Experimentado</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check iconin"></i>
-                <div>
-                  <h3>VSCODE</h3>
-                  <p>Experimentado</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container container2">
-            <h2 class="experience-sub-title">SKILLS</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-brands fa-python iconin"></i>
+  <!-- <a target="_blank" href="https://icons8.com/icon/qULYrKvr-AFH/django">Django</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a> -->
+</body>
 
-                <div>
-                  <h3>Pyhton</h3>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-linux iconin"></i>
-                <div>
-                  <h3>Linux</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon dj-icon"
-                  src="./assets/dj-icon.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  class="icon-MySQL"
-                  src="./assets/mysql-icon.png"
-                  alt="Experience icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-github iconin"></i>
-                <div>
-                  <h3>Github</h3>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-docker iconin"></i>
-                <div>
-                  <h3>Docker</h3>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-html5 iconin"></i>
-                <div>
-                  <h3>HTML-5</h3>
-                </div>
-              </article>
-              <article>
-                <i class="fa-brands fa-css3-alt iconin"></i>
-                <div>
-                  <h3>CSS-3</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <i
-        class="fa-solid fa-angles-down icon arrow"
-        onclick="location.href='/#projects'"
-      ></i>
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Navega por mis</p>
-      <h1 class="title">Proyectos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers about-two">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="./assets/project-1.png"
-                alt="Project 1"
-              />
-              <div class="article-container capa">
-                <h3>Platzigram</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                  modi hic corporis eligendi, sunt amet! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Dolor modi hic corporis
-                  eligendi, sunt amet! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolor modi
-                </p>
-              </div>
-            </div>
-            <h2 class="experience-sub-title project-title">Proyecto uno</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="./assets/project-2.png"
-                alt="Project 2"
-              />
-              <div class="article-container capa">
-                <h3>Task app</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                  modi hic corporis eligendi, sunt amet! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Dolor modi hic corporis
-                  eligendi, sunt amet! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolor modi
-                </p>
-              </div>
-            </div>
-            <h2 class="experience-sub-title project-title">Proyecto dos</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="./assets/project-3.png"
-                alt="Project 3"
-              />
-              <div class="article-container capa">
-                <h3>Premios Platzi</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                  modi hic corporis eligendi, sunt amet! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Dolor modi hic corporis
-                  eligendi, sunt amet! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolor modi
-                </p>
-              </div>
-            </div>
-            <h2 class="experience-sub-title project-title">Proyecto tres</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <i
-        class="fa-solid fa-angles-down icon arrow"
-        onclick="location.href='/#projects1'"
-      ></i>
-    </section>
-    <section id="projects1">
-      <p class="section__text__p1">Navega por mis</p>
-      <h1 class="title">Proyectos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers about-two">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="./assets/project-1.png"
-                alt="Project 1"
-              />
-              <div class="article-container capa">
-                <h3>Password generator</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                  modi hic corporis eligendi, sunt amet! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Dolor modi hic corporis
-                  eligendi, sunt amet! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolor modi
-                </p>
-              </div>
-            </div>
-            <h2 class="experience-sub-title project-title">Project cuatro</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="./assets/project-2.png"
-                alt="Project 2"
-              />
-              <div class="article-container capa">
-                <h3>Api</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                  modi hic corporis eligendi, sunt amet! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Dolor modi hic corporis
-                  eligendi, sunt amet! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolor modi
-                </p>
-              </div>
-            </div>
-            <h2 class="experience-sub-title project-title">Proyecto cinco</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                class="project-img"
-                src="./assets/project-3.png"
-                alt="Project 3"
-              />
-              <div class="article-container capa">
-                <h3>Clon de google</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                  modi hic corporis eligendi, sunt amet! Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Dolor modi hic corporis
-                  eligendi, sunt amet! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Dolor modi
-                </p>
-              </div>
-            </div>
-            <h2 class="experience-sub-title project-title">Proyecto seis</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/'"
-              >
-                Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <i
-        class="fa-solid fa-angles-down icon arrow"
-        onclick="location.href='/#contact'"
-      ></i>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Ponte en contacto</p>
-      <h1 class="title">Contáctame</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            class="icon contact-icon email-icon"
-            src="./assets/email.png"
-            alt="Email icon"
-          />
-          <p>
-            <a href="mailto:alder.mtz.ant@gmail.com">alder.mtz.ant@gmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            class="icon contact-icon"
-            src="./assets/linkedin.png"
-            alt="linkedin icon"
-          />
-          <p>
-            <a
-              href="mailto:https://www.linkedin.com/in/alder-mart%C3%ADnez-6146ba1b0/"
-              >Linkedin</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <i class="fa-solid fa-mobile mobile"></i>
-          <p class="number">951-126-54-31</p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav id="footer">
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Acerca de</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Alder Martinez. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-    <!-- Font Awesome CSS -->
-    <script
-      src="https://kit.fontawesome.com/d2b20da030.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- <a target="_blank" href="https://icons8.com/icon/qULYrKvr-AFH/django">Django</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a> -->
-  </body>
 </html>
