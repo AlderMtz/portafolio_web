@@ -136,7 +136,7 @@
   #profile {
     display: flex;
     align-items: center;
-    height: 83vh;
+    height: 80vh;
   }
   #about {
     height: fit-content;
@@ -157,10 +157,10 @@
   #about .section__pic-container img {
     width: 275px;
     height: 275px;
-    margin-top: -5rem;
+    
   }
   #about .about-containers {
-    margin-top: -8rem;
+    margin-top: -5rem;
   }
 
   section {
@@ -184,15 +184,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 16rem;
   }
 
   .pic2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
-    margin-bottom: -5rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+   
   }
 
   .about-containers {
@@ -289,7 +290,7 @@
   }
 
   #profile {
-    height: 88vh;
+    height: 80vh; 
   }
   .section__pic-container {
     margin-bottom: 0;
@@ -297,6 +298,10 @@
   }
   #about .section__pic-container {
     margin: 0;
+  }
+  #about {
+    padding-top: 0rem;
+    height: 100vh;
   }
 
   article {
