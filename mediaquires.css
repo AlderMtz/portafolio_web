@@ -104,6 +104,12 @@
     visibility: visible;
     cursor: pointer;
   }
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh; 
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -279,6 +285,8 @@
     color: white;
     font-size: 1rem;
   }
+
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -427,4 +435,5 @@
     color: white;
     font-size: 1rem;
   }
+ 
 }
