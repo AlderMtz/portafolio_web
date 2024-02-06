@@ -869,4 +869,22 @@ body.dark-mode {
 
 /* Details cards section */
 
+#projects .capa p {
+  color: white;
+  margin-top: -2rem;
+  font-size: 0.7rem;
+}
+#projects .capa h3 {
+  color: white;
+  font-size: 1rem;
+}
 
+#projects1 .capa p {
+  color: white;
+  margin-top: -2rem;
+  font-size: 0.7rem;
+}
+#projects1 .capa h3 {
+  color: white;
+  font-size: 1rem;
+}
