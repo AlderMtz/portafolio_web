@@ -69,6 +69,10 @@ a:hover {
 /* Hamburger menu. */
 #hamburger-nav {
   display: none;
+  justify-content: space-around;
+  align-items: center;
+ 
+
 }
 
 .hamburger-menu {
@@ -888,3 +892,5 @@ body.dark-mode {
   color: white;
   font-size: 1rem;
 }
+
+

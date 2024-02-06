@@ -11,8 +11,6 @@
     gap: 1rem;
   }
    */
-
- 
 }
 
 @media screen and (min-width: 1200px) {
@@ -83,7 +81,7 @@
   #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-    cursor:pointer;
+    cursor: pointer;
   }
   #projects1 .capa {
     border-radius: 15px;
@@ -104,7 +102,7 @@
   #projects1 .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-    cursor:pointer;
+    cursor: pointer;
   }
 }
 
@@ -123,6 +121,7 @@
   }
   #hamburger-nav {
     display: flex;
+    
   }
   #experience,
   .experience-details-container {
@@ -141,6 +140,7 @@
   }
   #about {
     height: fit-content;
+    padding-top: 15rem;
   }
 
   .arrow {
@@ -169,8 +169,8 @@
   .section__pic-container img {
     width: 275px;
     height: 275px;
-    margin-top: 1rem;
-    margin-bottom: -1rem;
+    /* margin-top: 1rem;
+    margin-bottom: -1rem; */
     justify-content: center;
     align-items: center;
   }
@@ -184,6 +184,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15rem;
+  }
+
+  .pic2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: -5rem;
   }
 
   .about-containers {
@@ -227,7 +236,7 @@
   #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-    cursor:pointer;
+    cursor: pointer;
   }
   #projects1 .capa {
     border-radius: 15px;
@@ -246,7 +255,7 @@
   #projects1 .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-    cursor:pointer;
+    cursor: pointer;
   }
   #projects .capa p {
     color: white;
@@ -257,7 +266,7 @@
     color: white;
     font-size: 1rem;
   }
-  
+
   #projects1 .capa p {
     color: white;
     margin-top: -2rem;
@@ -267,8 +276,6 @@
     color: white;
     font-size: 1rem;
   }
-
- 
 }
 
 @media screen and (max-width: 600px) {
@@ -372,7 +379,7 @@
   #projects .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-    cursor:pointer;
+    cursor: pointer;
   }
 
   #projects1 .capa {
@@ -391,7 +398,7 @@
   #projects1 .article-container:hover > .capa {
     opacity: 1;
     visibility: visible;
-    cursor:pointer;
+    cursor: pointer;
   }
 
   #projects .capa p {
@@ -403,7 +410,7 @@
     color: white;
     font-size: 1rem;
   }
-  
+
   #projects1 .capa p {
     color: white;
     margin-top: -2rem;
