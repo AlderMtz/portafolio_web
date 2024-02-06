@@ -127,6 +127,8 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+
+
   #profile,
   .section-container {
     flex-direction: column;
@@ -301,7 +303,7 @@
   }
   #about {
     padding-top: 0rem;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   article {
