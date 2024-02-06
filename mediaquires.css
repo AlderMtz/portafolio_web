@@ -11,6 +11,26 @@
     gap: 1rem;
   }
    */
+
+   #projects .capa p {
+    color: white;
+    margin-top: -2rem;
+    font-size: 0.7rem;
+  }
+  #projects .capa h3 {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  #projects1 .capa p {
+    color: white;
+    margin-top: -2rem;
+    font-size: 0.7rem;
+  }
+  #projects1 .capa h3 {
+    color: white;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -246,6 +266,27 @@
     visibility: visible;
     cursor:pointer;
   }
+  #projects .capa p {
+    color: white;
+    margin-top: -2rem;
+    font-size: 0.9rem;
+  }
+  #projects .capa h3 {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  #projects1 .capa p {
+    color: white;
+    margin-top: -2rem;
+    font-size: 0.9rem;
+  }
+  #projects1 .capa h3 {
+    color: white;
+    font-size: 1rem;
+  }
+
+ 
 }
 
 @media screen and (max-width: 600px) {
@@ -369,5 +410,25 @@
     opacity: 1;
     visibility: visible;
     cursor:pointer;
+  }
+
+  #projects .capa p {
+    color: white;
+    margin-top: -2rem;
+    font-size: 0.95rem;
+  }
+  #projects .capa h3 {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  #projects1 .capa p {
+    color: white;
+    margin-top: -2rem;
+    font-size: 0.95rem;
+  }
+  #projects1 .capa h3 {
+    color: white;
+    font-size: 1rem;
   }
 }
