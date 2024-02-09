@@ -16,6 +16,8 @@
 @media screen and (min-width: 1200px) {
   #profile.dark-mode .box1 img {
     box-shadow: inset 16px 14px 20px #0000008c;
+    background-color: black;
+    transition: all 0.7s;
   }
 
   #profile.dark-mode .box1 {
@@ -184,8 +186,9 @@
   }
 
   #profile.dark-mode .section__pic-container img {
-    background-color: #c4ffff;
     box-shadow: 0 0 5px #3b8eed, 0 0 15px #3b8eed, 0 0 20px #3b8eed;
+    background-color: black;
+    transition: all 0.7s;
   }
 
   .section__pic-container {
